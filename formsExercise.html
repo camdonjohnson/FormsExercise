@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Survey">
+    <title>Survey</title>
+</head>
+
+
+<body>
+
+<fieldset><legend>Customer Experience Survey</legend>
+    <form>
+            <label>
+                Store Number:
+                <select name="visitorStoreNumber">
+                    <option hidden>Select A Store</option>
+                    <option value="3109">3109</option>
+                    <option value="2421">2421</option>
+                    <option value="5357">5357</option>
+                </select>
+            </label>
+            
+            <fieldset><legend>When you visited:</legend>
+                <label>
+                    Date Visited
+                    <input type="date" name="visitorDateVisited" min="2022-01-01" max="2022-12-31">
+                </label>
+                <br>
+                <label>
+                    Time
+                    <input type="time" name="visitorTimeVisited">
+                </label>
+                </fieldset>
+
+            <label>
+                Full Name:
+                <input type="text" name="visitorFullName" placeholder="Name">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="text" name="visitorEmail" placeholder="Email">
+            </label>
+
+            <fieldset><legend>How would you rate your level of satisfaction with your visit?</legend>
+                <input type="radio" name="visitorSatisfactionRating">
+                Satisfied
+                <br>
+                <input type="radio" name="visitorSatisfactionRating" checked>
+                Neither Satisfied nor Dissatisfied
+                <br>
+                <input type="radio" name="visitorSatisfactionRating">
+                Dissatisfied
+            </fieldset>
+
+            <label>
+                Tell us about your experience:
+                <br>
+                <textarea name="visitorExperience" cols="20" rows="2" style="resize: none;"></textarea>
+            </label>
+            <br>
+            <label>
+                Times visited in the last month:
+                <br>
+                <input type="number" min="1" max="30">
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="visitorNotify" required>
+                Please check the box if you would be willing to be contacted about your experience
+            </label>
+            <br>
+            <label>
+                Password 
+                <input type="password" minlength="5" maxlength="10">
+            </label>
+
+
+
+                <br>
+                <input type="reset">
+                <input type="submit">
+    </form>
+</fieldset>
+
+</body>
+</html>
